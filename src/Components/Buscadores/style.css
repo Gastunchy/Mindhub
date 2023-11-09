@@ -1,0 +1,27 @@
+.contenedorGrandeInput, .contenedorGrandeCheck {
+    display: flex; /* Esto hace que los divs se alineen horizontalmente */
+    align-items: center; /* Para alinear verticalmente en el centro */
+
+  }
+  
+  .contenedorFiltro {
+    display: flex;
+    align-items: center; /* Para alinear verticalmente en el centro */
+  }
+  
+  .contenedorCheck {
+    display: flex;
+    align-items: center; /* Para alinear verticalmente en el centro */
+  }
+  
+  #lupita {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px; /* Agrega un margen a la izquierda para separar el icono de lupita */
+  }
+
+  .contenedorPrincipal {
+    display: flex; /* Alinea los componentes horizontalmente */
+    justify-content: space-between; /* Espacio entre los componentes */
+    padding: 10px; /* Espaciado adicional si es necesario */
+  }

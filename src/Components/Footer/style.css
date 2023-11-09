@@ -1,0 +1,51 @@
+.footer {
+    background-color: #D7E5CA;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+
+.card {
+    margin: 10px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    background-color: none;
+}
+
+
+.footerLinks a {
+    text-decoration: none;
+    align-items: center;
+    width: 10pv;
+    height: 10pv;
+    margin: 10px;
+}
+
+.footerRedes a {
+    text-decoration: none;
+    color: inherit;
+  
+
+}
+
+.card-header{
+    background-color: #F9F3CC;
+}
+.redesIcon{
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+   
+}
+.footerRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.redesIcon:hover {
+    transform: scale(1.1); /* Escala el texto al 110% en el evento hover */
+  }

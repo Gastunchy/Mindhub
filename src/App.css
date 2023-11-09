@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contenedorCheckboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.CheckM {
+  display: flex;
+  margin: 10px;
+}
+
+.contenedorCheckboxesYInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedorCarta {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .contenedorGrandeCheck {
+    display: flex;
+    flex-direction: row;
+    flex: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .CheckM {
+    margin: 5px 0;
+
+  }
+
+  .CheckM input {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 767px) {
+  .contenedorGrandeInput {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .contenedorGrandeInput label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contenedorGrandeInput input {
+    width: 80%;
+    font-size: 14px;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .header .animated-header {
+    justify-content: left;
+    align-items: center;
+  }
+
+  #ImgLogo {
+    max-width: 50px;
+    /* Ajusta el tamaño máximo de la imagen */
+  }
+
+  h1 {
+    font-size: 20px;
+    /* Ajusta el tamaño de fuente del título */
+  }
+
+  .navHeader,
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+
+  }
+
+  .button-container button {
+
+    margin-top: auto;
+    width: 50px;
+    height: 20px;
+  }
+
+  .button-container button li, .button-container button li a {
+    width: auto;
+    height: auto;
+    font-size: 10px;
+  }
+
+
+
+}

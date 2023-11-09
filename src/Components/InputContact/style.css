@@ -1,0 +1,15 @@
+.contenedorForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Establece la altura para centrar verticalmente */
+  }
+  
+  .formContact {
+    width: 300px; /* Ancho deseado para el formulario */
+  }
+  
+  .form-control {
+    width: 100%; /* Asegura que los campos de entrada ocupen todo el ancho del formulario */
+    margin: 10px ; /* Agrega un espacio entre los campos de entrada */
+  }

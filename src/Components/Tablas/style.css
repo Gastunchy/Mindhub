@@ -1,0 +1,50 @@
+table {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    border-collapse: collapse;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.tituloTable {
+    background-color: #8EACCD;
+    font-weight: bold;
+    display: table;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtituloTable {
+    background-color: #aafdaa;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+
+}
+
+.textTable {
+    background-color: #F9F3CC;
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contenedorCat {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Estadisticasimportadas {
+    display: flex;
+    justify-content: space-between;
+
+
+}
