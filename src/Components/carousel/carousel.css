@@ -1,0 +1,9 @@
+.carousel-item img {
+    max-width:70%;
+    height: auto;
+    margin: auto; /* Centra la imagen horizontalmente */
+  }
+ #carouselExampleRide{
+  background-color: white;
+  padding: 10px;
+}

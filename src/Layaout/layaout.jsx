@@ -1,14 +1,14 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Nav from "../Components/Nav";
+import Carousel from "../Components/carousel";
 
 
-function Layout({children, title}){
+function Layout({children}){
     return(
         <>
         <div>
         <Header/>
-        <Nav title={title}/>
+        <Carousel/>
         {children}
         <Footer/>
         </div>
