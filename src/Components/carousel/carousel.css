@@ -1,5 +1,5 @@
 .carousel-item img {
-    max-width:70%;
+    max-width:50%;
     height: auto;
     margin: auto; /* Centra la imagen horizontalmente */
   }

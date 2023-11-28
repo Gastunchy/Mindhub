@@ -1,6 +1,7 @@
 import "./style.css"
 import logoEvento from "../../assets/img/logoEventox.png"
 import { Link } from "react-router-dom";
+import Carrousel from "../carousel/Carousel";
 
 function Header() {
 
@@ -45,7 +46,13 @@ function Header() {
                                         <li><Link to="/Stats">Stats</Link></li>
                                     </button>
                                 </li>
+                                <li className="nav-item">
+                                    <button id="boton" type="button" className="btn btn-outline-info">
+                                        <li><Link to="/Login">Login</Link></li>
+                                    </button>
+                                </li>
                             </ul>
+                         
                         </div>
                     </nav>
 
