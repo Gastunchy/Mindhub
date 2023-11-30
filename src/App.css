@@ -1,6 +1,18 @@
 * {
   padding: 0;
   margin: 0;
+
+}
+
+body {
+  height: 100%;
+  margin: 0;
+
+}
+#root {
+
+  display: flex;
+  flex-direction: column;
 }
 
 .contenedorCards {
@@ -32,6 +44,50 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+
+
+}
+
+
+.contenedorCarta .cardM {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #8EACCD, #D7E5CA, #F9F3CC);
+  animation: gradientChange 5s ease infinite;
+  background-size: 600% 600%
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contenImg {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-img-top {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -104,7 +160,8 @@
     height: 20px;
   }
 
-  .button-container button li, .button-container button li a {
+  .button-container button li,
+  .button-container button li a {
     width: auto;
     height: auto;
     font-size: 10px;

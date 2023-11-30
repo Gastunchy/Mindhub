@@ -6,6 +6,7 @@ import "../Components/Buscadores/style.css"
 import Card from "../Components/Cards/card";
 import CardVacia from "../Components/Cards/cardVacia";
 import { useSelector } from "react-redux";
+import Carousel from "../Components/carousel/Carousel";
 
 
 function Home({ title }) {
@@ -93,7 +94,7 @@ function Home({ title }) {
 
     return (
         <Layout title={title}>
-
+             <Carousel/>
             <div className="contenedorCheckboxesYInputs">
 
                 <div className="contenedorGrandeCheck">

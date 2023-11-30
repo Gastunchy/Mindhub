@@ -1,15 +1,125 @@
-.contenedorForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* Establece la altura para centrar verticalmente */
+.contact-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  background-color: #dcd3ff;
+}
+.contact-content {
+  background: #ede7ff;
+  padding: 50px 30px;
+  width: 50%;
+  text-align: center;
+  border-radius: 0.4em;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 95%;
+  padding: 20px 10px;
+  margin: 10px 0px;
+  border: none;
+  font-size: 15px;
+  border-radius: 0.4em;
+  background-color: rgb(243, 243, 243);
+}
+.contactanos-div-input {
+  width: 100%;
+}
+.contactanos-div-input input {
+  width: 86%;
+}
+.contactanos-div-input button {
+  padding: 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  background-color: rgb(200, 35, 51);
+  color: white;
+}
+.contactanos-div-select {
+  width: 100%;
+}
+.contactanos-div-select button {
+  padding: 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  background-color: rgb(40, 167, 69);
+  color: white;
+}
+.contactanos-div-select button:hover {
+  background-color: white;
+  border: 1px solid rgb(40, 167, 69);
+  color: rgb(40, 167, 69);
+  transition: 0.2s ease-in-out;
+}
+.contactanos-div-input button:hover {
+  background-color: white;
+  border: 1px solid rgb(200, 35, 51);
+  color: rgb(200, 35, 51);
+  transition: 0.2s ease-in-out;
+}
+select {
+  padding: 20px 10px;
+  width: 84%;
+  border-radius: 0.4em;
+  font-size: 15px;
+  margin: 10px 0px;
+  background-color: rgb(243, 243, 243);
+  border: none;
+}
+textarea {
+  width: 95%;
+  border-radius: 0.4em;
+  height: 150px;
+  padding: 10px 10px;
+  border: none;
+  margin: 10px 0px;
+  background-color: rgb(243, 243, 243);
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+.input:focus {
+  outline: none;
+}
+.div-button {
+  width: 100%;
+}
+.button-form-contact {
+  width: 97%;
+  border: none;
+  border-radius: 0.4em;
+  padding: 20px 0px;
+  font-size: 15px;
+  background-color: #7828e8;
+  color: white;
+}
+
+::placeholder {
+  color: #858383;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.button-form-contact:hover {
+  background-color: white;
+    border: 1px solid #7828e8;
+    color: #7828e8;
+  transition: 0.2s;
+}
+@media (max-width: 450px) {
+  .contact-content {
+    width: 90%;
   }
-  
-  .formContact {
-    width: 300px; /* Ancho deseado para el formulario */
-  }
-  
-  .form-control {
-    width: 100%; /* Asegura que los campos de entrada ocupen todo el ancho del formulario */
-    margin: 10px ; /* Agrega un espacio entre los campos de entrada */
-  }
+}

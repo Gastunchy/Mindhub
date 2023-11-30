@@ -1,12 +1,13 @@
 import Layout from "../Layaout/layaout";
 import Login from "../Components/login/Login";
 
-function LoginPage(props) {
+
+function LoginPage() {
 
     return (
         <>
-            <Layout title={props.title}>
-                <Login></Login>
+           <Layout>
+                <Login/>
             </Layout>
         </>
     );

@@ -8,7 +8,6 @@ function Layout({children}){
         <>
         <div>
         <Header/>
-        <Carousel/>
         {children}
         <Footer/>
         </div>
