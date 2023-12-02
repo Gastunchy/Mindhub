@@ -10,7 +10,7 @@ function inputContact() {
         </div>
         <div className="form">
           <form
-            action="mailto:metrica.agenciamkt@gmail.com"
+            action="mailto:juanpabloguingold@gmail.com"
             method="POST"
             encType="text/plain"
           >

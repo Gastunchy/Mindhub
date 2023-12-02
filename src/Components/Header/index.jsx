@@ -1,7 +1,7 @@
 import "./style.css"
 import logoEvento from "../../assets/img/logoEventox.png"
 import { Link } from "react-router-dom";
-import Carrousel from "../carousel/Carousel";
+
 
 function Header() {
 

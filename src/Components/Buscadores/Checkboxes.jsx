@@ -1,21 +1,21 @@
 import "./style.css"
 
-function Checkboxes(categorias, categoriasCheckeadas, SetCategoriasCheckeadas ) {
-   
+function Checkboxes(categorias, categoriasCheckeadas, SetCategoriasCheckeadas) {
+
     function filtrarCheckboxes(e) {
 
         const checkboxInput = e.target.value;
-       
+
         if (e.target.checked) {
             let arrayCategorias = [...categoriasCheckeadas, checkboxInput]
             SetCategoriasCheckeadas(arrayCategorias)
-           
+
             //... clona una array, objeto
 
         } else {
             let arrayCategorias = categoriasCheckeadas.filter((categoria) => categoria != checkboxInput)
             SetCategoriasCheckeadas(arrayCategorias)
-  
+
 
         }
 

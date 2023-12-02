@@ -10,44 +10,45 @@ function tablePast() {
     let [porcentajeAsistenciaPasadas, SetPorcentajeAsistenciaPasadas] = useState([]);
     let [contadorCategoriasPasadas, SetContadorCategoriasPasadas] = useState([]);
     let [porcentajeFinalPasadas, SetPorcentajeFinalPasadas] = useState([]);
+   
     useEffect(() => {
-       
-                let arrayCategoriasPasados = eventos.filter((evento) => evento.assistance).map((evento) => evento.category)
-                arrayCategoriasPasados = new Set(arrayCategoriasPasados)
-                arrayCategoriasPasados = Array.from(arrayCategoriasPasados)
 
-                let arrayPasado = eventos.filter((evento) => evento.assistance)
+        let arrayCategoriasPasados = eventos.filter((evento) => evento.assistance).map((evento) => evento.category)
+        arrayCategoriasPasados = new Set(arrayCategoriasPasados)
+        arrayCategoriasPasados = Array.from(arrayCategoriasPasados)
 
-                for (const evento of arrayPasado) {
+        let arrayPasado = eventos.filter((evento) => evento.assistance)
 
-                    const categoria = evento.category;
-                    const precio = evento.price;
-                    const asistencia = evento.assistance;
-                    const capacidad = evento.capacity;
-                    const gananciaEvento = precio * asistencia;
+        for (const evento of arrayPasado) {
 
-                    if (gananciasCategoriasPasadas[categoria]) {
-                        gananciasCategoriasPasadas[categoria] += gananciaEvento;
-                    } else {
-                        gananciasCategoriasPasadas[categoria] = gananciaEvento;
-                    }
+            const categoria = evento.category;
+            const precio = evento.price;
+            const asistencia = evento.assistance;
+            const capacidad = evento.capacity;
+            const gananciaEvento = precio * asistencia;
 
-                    if (porcentajeAsistenciaPasadas[categoria]) {
-                        porcentajeAsistenciaPasadas[categoria] += (asistencia * 100) / capacidad;
-                        contadorCategoriasPasadas[categoria] += 1
-                    } else {
-                        porcentajeAsistenciaPasadas[categoria] = (asistencia * 100) / capacidad;
-                        contadorCategoriasPasadas[categoria] = 1
-                    }
-                    porcentajeFinalPasadas[categoria] = porcentajeAsistenciaPasadas[categoria]  / contadorCategoriasPasadas[categoria].toFixed(2);
+            if (gananciasCategoriasPasadas[categoria]) {
+                gananciasCategoriasPasadas[categoria] += gananciaEvento;
+            } else {
+                gananciasCategoriasPasadas[categoria] = gananciaEvento;
+            }
+
+            if (porcentajeAsistenciaPasadas[categoria]) {
+                porcentajeAsistenciaPasadas[categoria] += (asistencia * 100) / capacidad;
+                contadorCategoriasPasadas[categoria] += 1
+            } else {
+                porcentajeAsistenciaPasadas[categoria] = (asistencia * 100) / capacidad;
+                contadorCategoriasPasadas[categoria] = 1
+            }
+            porcentajeFinalPasadas[categoria] = porcentajeAsistenciaPasadas[categoria] / contadorCategoriasPasadas[categoria].toFixed(2);
 
 
-                }
+        }
 
-                SetGananciasCategoriasPasadas(gananciasCategoriasPasadas)
-                SetcategoriasPasados(arrayCategoriasPasados)
-                SetPorcentajeFinalPasadas(porcentajeFinalPasadas)
-       
+        SetGananciasCategoriasPasadas(gananciasCategoriasPasadas)
+        SetcategoriasPasados(arrayCategoriasPasados)
+        SetPorcentajeFinalPasadas(porcentajeFinalPasadas)
+
     }, []);
     return (
 
