@@ -4,10 +4,10 @@ import axios from "axios";
 const get_eventos = createAsyncThunk("get_eventos", async () => {
     try {
         let eventos = await axios
-            .get("/src/data/data.json")
+            .get("http://localhost:3000/api/eventos/")
             .then((response) => {
 
-                return response.data.events;
+                return response.data.eventos;
 
             });
         return eventos;

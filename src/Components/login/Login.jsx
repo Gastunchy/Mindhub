@@ -20,6 +20,7 @@ const Login = () => {
         })
             .then((response) => {
                 localStorage.setItem("token", response.data.token);
+                navigate("/")
             })
             .catch((error) => {
                 console.log(error);
