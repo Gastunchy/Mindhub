@@ -14,7 +14,7 @@ const Login = () => {
     
     const handleSignIn = () => {
 
-        axios.post("http://localhost:3000/api/login/", {
+        axios.post("http://backend-api:3000/api/login/", {
             email: emailInputRef.current.value,
             password: passwordInputRef.current.value,
         })
