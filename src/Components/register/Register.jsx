@@ -25,7 +25,7 @@ const register = () => {
     const navigate = useNavigate()
     const handleRegister = () => {
 
-        axios.post("https://backend-ifmxubjqra-rj.a.run.app/api/register/", {
+        axios.post("http://localhost:3000/api/register/", {
             email: emailInputRef.current.value,
             password: passwordInputRef.current.value,
             name: nameImputRef.current.value,
